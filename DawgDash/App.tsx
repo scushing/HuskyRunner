@@ -1,15 +1,18 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
-import Dawg from "./components/Dawg";
+import {Dimensions, StyleSheet, Text, View} from "react-native";
+import Box from "./Box";
+
 
 export default function App() {
+    const screenWidth = Dimensions.get("screen").width
+    const screenHeight = Dimensions.get("screen").height
 
-
+    console.log(screenWidth)
+    console.log(screenHeight)
 
     return (
         <View style={styles.container}>
-            <Text>Dawg Dash!</Text>
-
+            <Box />
         </View>
     );
 }
